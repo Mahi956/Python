@@ -1,82 +1,82 @@
 # PRIME NUMBER 
 
-# n = int(input("enter number : "))
-# prime = True
+n = int(input("enter number : "))
+prime = True
 
-# for i in range(2, n):
-#     if n % i == 0:
-#         prime = False
-#         break
+for i in range(2, n):
+    if n % i == 0:
+        prime = False
+        break
 
-# if prime:
-#     print("Prime")
-# else:
-#     print("Not Prime")
+if prime:
+    print("Prime")
+else:
+    print("Not Prime")
     
 #FIBONACHI SERIES 
     
-# a = int(input("enter number : "))
-# b = int(input("enter number : "))
+a = int(input("enter number : "))
+b = int(input("enter number : "))
 
-# for i in range(10):
-#     print(a, end=" ")
+for i in range(10):
+    print(a, end=" ")
 
-#     c = a + b
-#     a = b
-#     b = c    
+    c = a + b
+    a = b
+    b = c    
     
 # PALINDROME NUMBER (READ FORWARD = READ BACKWORD)
 
-# n = int(input("Enter :"))
+n = int(input("Enter :"))
 
-# temp = n
-# rev = 0
+temp = n
+rev = 0
 
-# while n > 0 :
-#     digit = n % 10
-#     rev = rev*10 + digit 
-#     n =n//10
+while n > 0 :
+    digit = n % 10
+    rev = rev*10 + digit 
+    n =n//10
     
-# if temp == rev :
-#     print("PALINDROME") 
+if temp == rev :
+    print("PALINDROME") 
          
-# else:
-#     print("NOT PALINDROME") 
+else:
+    print("NOT PALINDROME") 
       
-        
-# n = 121
+#---------------------------------------------------- 
+n = 121
 
-# temp = n
-# rev = 0
+temp = n
+rev = 0
 
-# while n > 0:
-#     digit = n % 10
-#     rev = rev * 10 + digit
-#     n = n // 10
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
 
-# if temp == rev:
-#     print("Palindrome")
-# else:
-#     print("Not Palindrome")
+if temp == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
 
-#  REVERSE OF STRING 
+#  REVERSE OF STRING --------------------------------------------------
 
-# str1 = "hello"
-# temp = str1
-# rev = ""
+str1 = "hello"
+temp = str1
+rev = ""
 
-# for i in range(len(str1)-1, -1, -1):
-#     rev = rev + str1[i]
+for i in range(len(str1)-1, -1, -1):
+    rev = rev + str1[i]
 
-# print(rev)
+print(rev)
     
-# if temp == rev:
-#     print("palindrome")
+if temp == rev:
+    print("palindrome")
     
-# else:
-#     print("not")
+else:
+    print("not")
 
-# FREQUENCY OF ELEMENT 
+# FREQUENCY OF ELEMENT ----------------------------------------------
 
 arr = [1, 2, 2, 3, 1]
 
@@ -86,3 +86,13 @@ for num in arr:
     freq[num] = freq.get(num, 0) + 1
 
 print(freq)
+
+#  DUPLICATE NUMBER 
+
+arr = [1, 2, 3, 2, 4, 1]
+
+for i in range(len(arr)):
+    for j in range(i + 1, len(arr)):
+
+        if arr[i] == arr[j]:
+            print(arr[i])
